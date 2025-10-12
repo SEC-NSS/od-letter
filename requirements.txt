@@ -2,3 +2,4 @@ flask
 google-generativeai
 python-docx
 python-dotenv
+gunicorn

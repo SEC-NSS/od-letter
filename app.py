@@ -69,15 +69,16 @@ HTML_TEMPLATE = """
 </html>
 """
 
-# --- LOGIC FROM json_generator.py ---
+# --- LOGIC FROM json_generator.py (MODIFIED) ---
 
 def create_gemini_prompt(unstructured_data):
     """Creates the final, ultra-specific prompt with mandatory fields."""
     return f"""
 You are a highly precise data structuring engine. Your task is to convert the provided text into a single, clean JSON array. You must follow the rules below without exception.
+
 **CRITICAL RULES:**
-1.  **Mandatory Fields:** Every single student object in the output array **MUST** contain these four keys: `full_name`, `registration_number`, `department`, and `year`. No exceptions.
-2.  **Handling Missing Information:** If the information for any of the four mandatory keys cannot be found or inferred from the text, you **MUST** include the key with an **empty string `""`** as its value. Do not omit the key.
+1.  **Mandatory Fields:** Every single student object in the output array **MUST** contain these keys: `full_name`, `registration_number`, `department`, `year`, and `category`. For first-year students (`"year": "First"`), you **MUST** also include the `section` key. No exceptions.
+2.  **Handling Missing Information:** If the information for any of the mandatory keys cannot be found or inferred from the text, you **MUST** include the key with an **empty string `""`** as its value. Do not omit the key.
 3.  **Department Inference (Mandatory):**
     * First, try to extract the department from the text (e.g., "ECE", "CSE").
     * If it's not in the text, you **MUST** infer it from the two-letter code in the `registration_number`.
@@ -93,11 +94,15 @@ You are a highly precise data structuring engine. Your task is to convert the pr
         `SEC24...` → `"year": "Second"`
         `SEC25...` → `"year": "First"`
     * If the `registration_number` is missing, set the year's value to an empty string: `"year": ""`.
-5.  **Category Key (Conditional):**
-    * The `category` key is the **ONLY** key you should omit.
-    * Only include `category: "Hostel"` if the student is explicitly listed under a "(Hostellers Only)" section.
-    * Otherwise, the `category` key **MUST NOT** be present in the object.
-6.  **Final Output Format:** Your entire response **MUST** be only the JSON array `[...]`. Do not include any text or markdown before or after it.
+5.  **Category Inference (Mandatory):**
+    * You **MUST** determine the `category` from the text for each student.
+    * If the text for a student contains the word "Hostel", set the value to `"Hostel"`.
+    * If the text for a student contains the word "Dayscholar", set the value to `"Dayscholar"`.
+    * If neither is present, **default the value to `"Dayscholar"`.**
+6.  **Section Inference (For First-Year Students Only):**
+    * For students with `"year": "First"`, you **MUST** extract the `section` from the text (e.g., "A", "B", "C", "D").
+    * If not found, set to an empty string: `"section": ""`.
+7.  **Final Output Format:** Your entire response **MUST** be only the JSON array `[...]`. Do not include any text or markdown before or after it.
 ---
 **Now, process the following input data according to these exact rules:**
 {unstructured_data}
@@ -110,7 +115,7 @@ def extract_json_from_response(text):
         return match.group(0)
     return None
 
-# --- EXACT LOGIC FROM od_program.py ---
+# --- EXACT LOGIC FROM od_program.py (MODIFIED) ---
 
 def add_senior_student_list(doc, students):
     """Adds a formatted, numbered list of senior students to the document with a centered hyphen."""
@@ -188,20 +193,19 @@ def generate_student_document(students):
     style.name = 'Times New Roman'
     style.size = Pt(12)
 
-    # Changed the title from "Student Details" to "VOLUNTEERS LIST"
     doc.add_heading("VOLUNTEERS LIST", 0).runs[0].font.color.rgb = RGBColor(0, 0, 0)
 
     # Step 1: Group all students by category
     categorized_students = {}
     for student in students:
-        # Default category is "Uncategorized" if not present in the student data
-        category = student.get("category", "Uncategorized")
+        # Default category is "Dayscholar" to match the prompt's logic
+        category = student.get("category", "Dayscholar")
         if category not in categorized_students:
             categorized_students[category] = []
         categorized_students[category].append(student)
 
     # Define the order for categories
-    category_order = ["Hostel", "Dayscholar", "Uncategorized"]
+    category_order = ["Hostel", "Dayscholar"]
 
     for category_name in category_order:
         student_list = categorized_students.get(category_name)
@@ -209,10 +213,7 @@ def generate_student_document(students):
             continue
 
         # Add Category Heading (Level 1)
-        if category_name=="Uncategorized":
-            pass
-        else:
-            doc.add_heading(category_name, level=1).runs[0].font.color.rgb = RGBColor(0, 0, 0)
+        doc.add_heading(category_name, level=1).runs[0].font.color.rgb = RGBColor(0, 0, 0)
 
         # Step 2: Group students within the category by year
         students_by_year = {}

@@ -1,62 +1,54 @@
-[11-10-2025 22:46] Mugilan Anbarasu: Hello Junos 🤩
-Hope you’re all doing great! ✨
-
-The most awaited Blood Donation Camp (BDC) is scheduled for October 9🔥
-
-If you’re interested in volunteering for our BDC, kindly drop your details below 👇
-
-Example:
-1. Magesh – CSBS – SEC22CB118 – 8610495905
-
-1. Karthik Raj P-CSE-SEC24CS221-8870429256
-
-2. SABHARISH KUMAR K -EEE-SEC24EE014-9585726618
-
-3. ASWIN R  CSE - SEC24CS156 - 8270206810
-
-4. KISHORE.S _ IT_ SEC24IT035_9345533001
-5. Rajkumar R V- Sec24cs167- 6381285091
-6. KATHIR RAM B -CSE sec24cs065-9384227573
-7. NISHANTH S -CSE - SEC24cs122 -9444206009
-8. Sarveshwar S-Sec24ec044-6363314556
-9. DHARAN P IT SEC24IT069 9962412707
-10. AKILAN A- SEC24EC141-9489243391
-11. Manoranjithan M -SEC24EC058-7200174199
-12. Jayaganesh U - CSE ( AI&ML) SEC24AM036 - 9025980623
-13. Aswin s -ece -sec24ec048-9159121833
-14. Yugendhar k S 
-Sec24ec005- 6379933115
-[11-10-2025 22:47] Mugilan Anbarasu: Hello Junos 🤩
-Hope you’re all doing great! ✨
-
-The most awaited Blood Donation Camp (BDC) is scheduled for October 9🔥
-
-If you’re interested in volunteering for our BDC, kindly drop your details below 👇
-
-Example:
-1. Magesh – CSBS – SEC22CB118 – 8610495905
-
-1)DILSHAN S - AI & DS - SEC23AD021 - 6369067563
-2) Karthik Jayaram S K - SEC23CJ004 - 7339568685
-3.Nagsrivatsan R - EEE - SEC23EE065 - 6379176437
-ARJUN J-ECE-SEC23EC216 -8270785688
-5. Dilli kumar V -IT - SEC23IT162 -7305152580
-6. PRAGASHAM C - AiDS - SEC23AD126-6381012778
-7. HARI BALAN K - AI&DS - SEC23AD052 - 8610626727
-8. ALFARIS KHAN N - IT - SEC23IT118 - 9080567185                 9. SANJAY BABU S -EEE-SEC23EE043
-10.ALAGAPPAN A -ECE-SEC23EC049
-11. RUTHISH KUMAR S I - ECE - SEC23EC099-9952292073
-12. SAINATH K K - EIE - SEC23EI080 - 7806811335
-13. ⁠Ashwin Krishna n - EEE - sec23ee023 - 9944297583
-14.PL ARUNACHALAM – ECE – SEC23EC053- 9442236163
-15.Joel John -ECE-SEC23EC005-90430107778
-16. NAVEENKUMAR P - ECE - SEC23EC164 - 9791613845
-17. V.shibin -EEE-SEC23EE073-9840966616
-18. Ydmahendhra - IOT - SEC23CI006 - 9884977821
-19. RAMASAMY C - EIE - SEC23EI031 - 9342494223
-20. Mohamed Ibrahim F- AIML- SEC23AM076- 7200868915
-21. SIVASHANKER G -ECE- -SEC23EC066-9629015700
-22. JOAN SAM BENEDICT J - Ai&ds - SEC23AD152- 7603819343
-23. Karunesh EEE SEC23EE118 7305058357
-24. SONU S - AIDS - SEC23AD167 - 6380079365
-25. STEVE ALEX R-ECE-SEC23EC213-9087767381
+Magesh - SEC22CB118 - CSBS - Fourth - Hostel
+Karthik Raj P - SEC24CS221 - CSE - Second - Hostel
+SABHARISH KUMAR K - SEC24EE014 - EEE - Second - Hostel
+ASWIN R - SEC24CS156 - CSE - Second - Hostel
+KISHORE.S - SEC24IT035 - IT - Second - Hostel
+Rajkumar R V - SEC24CS167 - CSE - Second - Hostel
+KATHIR RAM B - SEC24CS065 - CSE - Second - Hostel
+NISHANTH S - SEC24CS122 - CSE - Second - Hostel
+Sarveshwar S - SEC24EC044 - ECE - Second - Hostel
+DHARAN P - SEC24IT069 - IT - Second - Hostel
+AKILAN A - SEC24EC141 - ECE - Second - Hostel
+Manoranjithan M - SEC24EC058 - ECE - Second - Hostel
+Jayaganesh U - SEC24AM036 - AI&ML - Second - Hostel
+Aswin S - SEC24EC048 - ECE - Second - Hostel
+Yugendhar K S - SEC24EC005 - ECE - Second - Hostel
+Arun Kumar - SEC25CS001 - A - CSE - First - Hostel
+Bharath Raj - SEC25IT002 - B - IT - First - Hostel
+Chandru M - SEC25EC003 - C - ECE - First - Hostel
+Deepak S - SEC25EE004 - D - EEE - First - Hostel
+Eswar P - SEC25AD005 - A - AI&DS - First - Hostel
+Feroz Khan - SEC25AM006 - B - AI&ML - First - Hostel
+Ganesh R - SEC25EI007 - C - EIE - First - Hostel
+DILSHAN S - SEC23AD021 - AI&DS - Third - Dayscholar
+Karthik Jayaram S K - SEC23CJ004 - M.Tech CSE - Third - Dayscholar
+Nagsrivatsan R - SEC23EE065 - EEE - Third - Dayscholar
+ARJUN J - SEC23EC216 - ECE - Third - Dayscholar
+Dilli Kumar V - SEC23IT162 - IT - Third - Dayscholar
+PRAGASHAM C - SEC23AD126 - AI&DS - Third - Dayscholar
+HARI BALAN K - SEC23AD052 - AI&DS - Third - Dayscholar
+ALFARIS KHAN N - SEC23IT118 - IT - Third - Dayscholar
+SANJAY BABU S - SEC23EE043 - EEE - Third - Dayscholar
+ALAGAPPAN A - SEC23EC049 - ECE - Third - Dayscholar
+RUTHISH KUMAR S I - SEC23EC099 - ECE - Third - Dayscholar
+SAINATH K K - SEC23EI080 - EIE - Third - Dayscholar
+Ashwin Krishna N - SEC23EE023 - EEE - Third - Dayscholar
+PL ARUNACHALAM - SEC23EC053 - ECE - Third - Dayscholar
+Joel John - SEC23EC005 - ECE - Third - Dayscholar
+NAVEENKUMAR P - SEC23EC164 - ECE - Third - Dayscholar
+V. Shibin - SEC23EE073 - EEE - Third - Dayscholar
+Ydmahendhra - SEC23CI006 - IOT - Third - Dayscholar
+RAMASAMY C - SEC23EI031 - EIE - Third - Dayscholar
+Mohamed Ibrahim F - SEC23AM076 - AI&ML - Third - Dayscholar
+SIVASHANKER G - SEC23EC066 - ECE - Third - Dayscholar
+JOAN SAM BENEDICT J - SEC23AD152 - AI&DS - Third - Dayscholar
+Karunesh - SEC23EE118 - EEE - Third - Dayscholar
+SONU S - SEC23AD167 - AI&DS - Third - Dayscholar
+STEVE ALEX R - SEC23EC213 - ECE - Third - Dayscholar
+Hari Prasad - SEC25CS008 - D - CSE - First - Dayscholar
+Indira R - SEC25IT009 - A - IT - First - Dayscholar
+Jagan M - SEC25EC010 - B - ECE - First - Dayscholar
+Kavya S - SEC25EE011 - C - EEE - First - Dayscholar
+Lakshmi P - SEC25AD012 - D - AI&DS - First - Dayscholar
+Mohan Khan - SEC25AM013 - A - AI&ML - First - Dayscholar
+Nandini R - SEC25EI014 - B - EIE - First - Dayscholar
